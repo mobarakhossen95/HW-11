@@ -1,0 +1,327 @@
+/* common css starts */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  :root{
+    --prymariFont:'Poppins', sans-serif;
+    --prymaricolor:#353535;
+    --secondaryFont:'PT Sans', sans-serif;
+    --secondarycolor:#FFCC00;
+  }
+ ol,ul,li{
+  list-style: none;
+ }
+ h1,h2,h3,h4,h5,h6,p,ul,span,ol{
+  margin: 0;
+  padding: 0;
+ } 
+ a{
+  text-decoration: none;
+ }
+ body{
+  font-family: 'Poppins', sans-serif;
+ }
+
+ .bttn {
+  color: #FFF;
+  font-family:var(--prymariFont);
+  font-size: 20px; /* 36px */
+  background-color: var(--secondarycolor);
+  border-radius: 20px;    
+  padding:17px 45px ;
+  display: inline-block;
+  }
+  .bttn span{
+    margin-left: 11px;
+  }
+  
+  .bttn.outline{
+    background-color: transparent;
+    color: var(--prymaricolor);
+    border: 1px solid #000;
+    margin-left:58px ;
+  }
+ /* common css ends */
+
+
+ /* NAV BAR STARTS */
+ nav{
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding: 16px !important;
+ }
+ nav .navbar-brand {
+  font-weight: 900;
+  font-size: 37px;
+ }
+
+ #custom_nav li a{
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 200%;  
+  padding: 18px 22px 5px 0;
+  display: inline-block;
+  position: relative;
+
+ }
+
+ #custom_nav li a::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: var(--prymaricolor);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.35s;
+   
+ }
+ #custom_nav li:hover a::after{
+  width: 50%;
+}
+#custom_nav li a::before{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: var(--prymaricolor);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: 0.35s;
+   
+ }
+ #custom_nav li:hover a::before{
+  width: 50%;
+}
+nav .navbar-toggler{
+  border: none;
+}
+nav .navbar-toggler:focus{  
+  border:none;
+  box-shadow: none;
+
+}
+ /* NAV BAR ENDS */
+
+ /* hero section starts */
+  #hero{
+    margin-bottom: 144px;
+  }
+  #hero h5{
+      color: var(--prymaricolor);
+      font-family: var(--prymariFont);
+      font-size: 24px;
+      font-weight: 400;
+      margin-bottom: 15px;
+  }
+#hero h5 span{
+  width: 32px;
+  height: 32px;
+  color: var(--secondarycolor);
+  margin-left: 38px;
+  }
+#hero h1{
+color: var(--prymaricolor);
+font-family: var(--secondaryFont);
+font-size: 64px;
+font-weight: 700;
+margin-bottom: 25px;
+}  
+#hero p{
+color: var(--prymaricolor);
+font-family: var(--prymariFont);
+font-size: 20px;
+font-weight: 400;
+line-height: 180%;
+margin-bottom:61px ; /* 36px */
+}
+.hero_icon{
+display: inline-block;
+color: var(--prymaricolor);
+font-family: var(--prymariFont);
+font-size: 22px;
+font-weight: 500;
+line-height: 180%; /* 39.6px */
+margin-top: 83px;
+}
+.hero_icon h4{
+  padding: 10px;
+  cursor:default;
+  font-size: 32px;
+  
+}
+
+.hero_icon span{
+  margin-right:30px;
+  background-color: #F4F3F3;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  transition: 0.34s;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.hero_icon:hover span{
+  background-color: var(--secondarycolor);
+  color: var(--prymaricolor);
+}
+.hero_mouse{
+  position: absolute;
+  bottom: -70px;
+  right: -20px;
+}
+ /* hero section ends */
+
+ /* ABOUT SECTION STARTS */
+
+ #about{
+  background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+}
+#about .about_cont h2{
+color: var(--prymaricolor);
+font-family: var(--secondaryFont);
+font-size: 50px;
+font-weight: 700;
+padding: 78px 0 26px 0;
+}
+
+#about .about_cont p{
+color: var(--prymaricolor);
+font-family: var(--prymariFont);
+font-size: 20px;
+font-weight: 400;
+line-height: 190%; /* 38px */
+}
+#about .about_cont .bttn{
+color: var(--prymaricolor);
+font-family: var(--prymariFont);
+font-size: 18px;
+font-weight: 500;
+line-height: 180%; /* 32.4px */
+background-color: transparent;
+padding: 17px 43px;
+border-radius: 20px;
+border: 1px solid #000000;
+margin-top: 62px;
+transition: 0.45s;
+}
+#about .about_cont .bttn:hover{
+background-color: var(--secondarycolor);
+color: var(--prymaricolor);
+border: none;
+font-size: 19px;
+}
+#about .about_cont img{
+margin-top: px;
+}
+.about_1{
+  bottom: 0;
+  right: -10px;
+}
+/* ABOUT SECTION ENDS */
+
+/*qualification section starts  */
+#quali{
+  padding: 151px 0 165px 0;
+}
+#quali .quali_cont img{
+ margin-left: 40%;
+}
+#quali .quali_cont{
+ padding: 57px 47px ;
+ border-radius: 20px;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+/* width:33.33%; */
+/* width: calc(33.33% - 24px); */
+/* margin-right: 24px; */
+}
+#quali .quali_cont h3{
+  color: var(--prymaricolor);
+  text-align: center;
+  font-family: var(--prymariFont);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 180%; /* 39.6px */
+  padding: 14px 0 18px 0;
+  }
+#quali .quali_cont p{
+color: #7A7A7A;
+text-align: center;
+font-family: var(--prymariFont);
+font-size: 16px;
+font-weight: 400;
+line-height: 190%; /* 30.4px */
+}
+/*qualification section ends  */
+/* BRANDING SECTION STARTS  */
+#branding{
+  background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+  margin-bottom: 50px;
+}
+
+#branding .branding_cont{
+  padding:0 0 0 103px;
+}
+#branding .branding_cont h2{
+color: var(--prymaricolor);
+font-family: var(--secondaryFont);
+font-size: 50px;
+font-weight: 700;
+padding: 78px 0 26px 0;
+
+}
+
+#branding .branding_cont p{
+  color: var(--prymaricolor);
+  font-family: var(--prymariFont);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 190%; /* 34.2px */
+}
+#branding .branding_cont .bttn{
+color: var(--prymaricolor);
+font-family: var(--prymariFont);
+font-size: 18px;
+font-weight: 500;
+line-height: 180%; /* 32.4px */
+background-color: transparent;
+padding: 17px 43px;
+border-radius: 20px;
+border: 1px solid #000000;
+margin-top: 62px;
+transition: 0.45s;
+}
+#branding .branding_cont .bttn:hover{
+background-color: var(--secondarycolor);
+color: var(--prymaricolor);
+border: none;
+font-size: 19px;
+}
+#branding .branding_img{
+display: inline-block;
+margin-bottom: -7px;
+margin-top: 17px;
+}
+
+.brand_icon {
+  display: inline-block;
+}
+.brand_icon h6{
+  cursor: default;
+  color: var(--prymaricolor);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 180%; /* 25.2px */
+}
+.brand_icon img{
+  margin-right:4px ;
+  /* margin-bottom: 10px; */
+}
+/* BRANDING SECTION ENDS  */
