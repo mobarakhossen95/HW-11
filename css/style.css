@@ -26,23 +26,33 @@
  }
 
  .bttn {
-  color: #FFF;
+  color: var(--prymaricolor);
   font-family:var(--prymariFont);
   font-size: 20px; /* 36px */
-  background-color: var(--secondarycolor);
+  border: 1px solid #000;
   border-radius: 20px;    
   padding:17px 45px ;
   display: inline-block;
+  transition: 0.34s;
   }
   .bttn span{
     margin-left: 11px;
+    color: var(--prymaricolor);
+    transition: 0.34s;
   }
-  
+  .bttn:hover span{
+    color: white;
+  }
   .bttn.outline{
     background-color: transparent;
     color: var(--prymaricolor);
     border: 1px solid #000;
     margin-left:58px ;
+    transition: 0.35s;
+  }
+  .bttn:hover{
+    background-color:#FFCC00 ;
+    color: white;
   }
  /* common css ends */
 
@@ -108,7 +118,7 @@ nav .navbar-toggler:focus{
 
  /* hero section starts */
   #hero{
-    margin-bottom: 144px;
+    margin-bottom:144px;
   }
   #hero h5{
       color: var(--prymaricolor);
@@ -180,8 +190,9 @@ margin-top: 83px;
 
  /* ABOUT SECTION STARTS */
 
- #about{
+#about{
   background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+  margin-bottom: 75px;
 }
 #about .about_cont h2{
 color: var(--prymaricolor);
@@ -217,9 +228,6 @@ color: var(--prymaricolor);
 border: none;
 font-size: 19px;
 }
-#about .about_cont img{
-margin-top: px;
-}
 .about_1{
   bottom: 0;
   right: -10px;
@@ -227,19 +235,14 @@ margin-top: px;
 /* ABOUT SECTION ENDS */
 
 /*qualification section starts  */
-#quali{
-  padding: 151px 0 165px 0;
-}
+
 #quali .quali_cont img{
  margin-left: 40%;
 }
-#quali .quali_cont{
+#quali .quali_contai{
  padding: 57px 47px ;
  border-radius: 20px;
 box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
-/* width:33.33%; */
-/* width: calc(33.33% - 24px); */
-/* margin-right: 24px; */
 }
 #quali .quali_cont h3{
   color: var(--prymaricolor);
@@ -251,18 +254,46 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
   padding: 14px 0 18px 0;
   }
 #quali .quali_cont p{
-color: #7A7A7A;
-text-align: center;
-font-family: var(--prymariFont);
-font-size: 16px;
-font-weight: 400;
-line-height: 190%; /* 30.4px */
+  color: #7A7A7A;
+  text-align: center;
+  font-family: var(--prymariFont);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 190%; /* 30.4px */
 }
+
+
+
+.quali_cart{
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+  margin-bottom: 15px;
+}
+
+#quali .quali_details{
+  padding-left: 45px;
+}
+#quali .quali_details h3{
+  color: var(--prymaricolor);
+  font-family: var(--prymariFont);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 180%; /* 25.2px */
+}
+#quali .quali_details p{
+  color: #7A7A7A;
+  font-family: var(--prymariFont);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 174%; /* 20.88px */
+}
+#quali .quali-carta{
+  padding: 39px 0;
+  
+ }
 /*qualification section ends  */
 /* BRANDING SECTION STARTS  */
 #branding{
   background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
-  margin-bottom: 50px;
 }
 
 #branding .branding_cont{
@@ -322,6 +353,237 @@ margin-top: 17px;
 }
 .brand_icon img{
   margin-right:4px ;
-  /* margin-bottom: 10px; */
 }
 /* BRANDING SECTION ENDS  */
+/* SKILL SECTION STARTS */
+#skill{
+  margin-top:147px ;
+}
+#skill .a_cart{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 20px;
+  margin-bottom: 23px;
+}
+#skill .skill-img .skill_pc{
+  background-color: #55852F;
+  height: 40px;
+  width: 40px;
+  line-height:40px;
+  border-radius: 50%;
+  text-align: center;
+}
+#skill .skill-img .skill_pc span{
+  color: #FFFFFF;
+}
+#skill .skill-img .skill_mbl{
+  background-color: #FEDC2A;
+  height: 40px;
+  width: 40px;
+  line-height:40px;
+  border-radius: 50%;
+  text-align: center;
+}
+#skill .skill-img .skill_mbl span{
+  color: #FFFFFF;
+}
+#skill .skill-img .skill_brand{
+  background-color:#FF8D3A;
+  height: 40px;
+  width: 40px;
+  line-height:40px;
+  border-radius: 50%;
+  text-align: center;
+}
+#skill .skill-img .skill_brand span{
+  color: #FFFFFF;
+}
+#skill .skill-cont h5{
+color: var(--prymaricolor);
+font-family: var(--prymariFont);
+font-size: 18px;
+font-weight: 600;
+line-height: 180%; /* 32.4px */ 
+padding-top: 17px; 
+}
+#skill .skill-cont p{
+color: var(--prymaricolor);
+font-family: var(--prymariFont);
+font-size: 12px;
+font-weight: 500;
+line-height: 180%; /* 21.6px */
+padding-bottom: 21px;
+}
+#skill .skill_cont{
+  text-align: center;
+}
+#skill .skill_cont h2{
+color: var(--prymaricolor);
+font-family: var(--secondaryFont);
+font-size: 50px;
+font-weight: 700;
+padding-bottom: 26px;
+text-align: right;
+}
+#skill .skill_cont p{
+  color: var(--prymaricolor);
+font-family: var(--prymariFont);
+font-size: 20px;
+font-weight: 400;
+line-height: 190%; /* 38px */
+padding-bottom: 32px;
+}
+
+.skill_cont1  h5{
+  color: var(--prymaricolor);
+text-align: center;
+font-family: var(--secondaryFont);
+font-size: 40px;
+font-weight: 700;
+}
+.skill_cont1  p{
+  color: var(--prymaricolor);
+  font-family: var(--prymariFont);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 180%; /* 25.2px */
+}
+.skill_cont2 h5{
+  color: var(--prymaricolor);
+  text-align: center;
+  font-family: var(--secondaryFont);
+  font-size: 40px;
+  font-weight: 700;
+}
+.skill_cont2  p{
+color: var(--prymaricolor);
+font-family: var(--prymariFont);
+font-size: 14px;
+font-weight: 500;
+line-height: 180%; /* 25.2px */
+}
+/* SKILL SECTION ENDS */
+/* EXPERT SECTION STARTS */
+#expart{
+  margin-top:297px ;
+}
+#expart .expert_cont h2{
+color: var(--prymaricolor);
+font-family: var(--secondaryFont);
+font-size: 50px;
+font-weight: 700;
+}
+#expart .expert_cont p{
+color: #7A7A7A;
+font-family:var(--prymariFont);
+font-size: 20px;
+font-weight: 400;
+line-height: 200%; /* 40px */
+margin-top: 26px;
+}
+#pills-tab li button{
+color: var(--prymaricolor);
+font-family: var(--prymariFont);
+font-size: 18px;
+font-weight: 500;
+line-height: 180%; /* 32.4px */
+margin: 0 36px;
+padding:17px 45px ;
+}
+#pills-tab li button.active{
+  border-radius: 20px;    
+  display: inline-block;
+  background-color: transparent;
+  color: var(--prymaricolor);
+  border: 2px solid #000;
+  margin-left:58px ;
+}
+.tab-pane img{
+  padding-left: 75px;
+}
+.bttn.outline{
+  margin:39px 0 116px 0 ;
+}
+.bttn.outline:hover{
+  background-color: #FFCC00;
+  color: white;
+}
+/* EXPERT SECTION ENDS */
+
+/* services section starts */
+#services{
+  background-color: #FFF7D5;
+  background-position: center;
+  background-size: cover;
+  margin-top: 30px;
+}
+#services .ser_cont h2{
+  color: var(--prymaricolor);
+  text-align: center;
+  font-family: var(--secondaryFont);
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 71px;
+  padding-bottom: 13px;
+}
+#services .ser_cont p{
+  color: #7A7A7A;
+  text-align: center;
+  font-family: var(--prymariFont);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 180%; /* 32.4px */
+  /* margin: 0 100px 0 10px; */
+  margin-bottom: 99px;
+  padding: 0 231px;
+}
+ .services_cart{
+  text-align: center;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.06);
+  transition: 0.5s;
+  margin-bottom: 103px;
+}
+.services_cart img{
+  width: 48px;
+  padding-top: 32px;
+}
+.services_cart h4{
+color: #353535;
+text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 180%; /* 43.2px */
+padding: 20px 80px;
+}
+.services_cart p{
+color: #7A7A7A;
+text-align: center;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 180%; /* 27px */
+padding:0 48px 80px 48px;
+}
+.services_cart:hover{
+  background: linear-gradient(159deg, #FC0 3.12%, #FFE476 94.59%);
+  transform-origin: bottom;
+  transform: scaleY(1.06);
+  color: white;
+}
+.services_cart:hover p{
+  color: white;
+}
+.services_cart:hover h4{
+  color: white;
+}
+.servics_cont:hover h3{
+  color: white;
+}
+/* services section ends */
+
+
+
